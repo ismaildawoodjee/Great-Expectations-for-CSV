@@ -1,5 +1,13 @@
 # E-Commerce Data Quality with Great Expectations
 
+- [E-Commerce Data Quality with Great Expectations](#e-commerce-data-quality-with-great-expectations)
+  - [Introduction](#introduction)
+  - [Instructions for Use](#instructions-for-use)
+    - [Python Environment Setup](#python-environment-setup)
+    - [Initialize Great Expectations Workspace](#initialize-great-expectations-workspace)
+      - [Key Definitions](#key-definitions)
+      - [Steps to Deploy Great Expectations](#steps-to-deploy-great-expectations)
+
 ## Introduction
 
 Ensuring data quality is a crucial step in any data engineering project. Ultimately, the end
@@ -149,16 +157,16 @@ Data Doc will not be very ideal for your requirements, so we can edit them by ru
     Here, in the Jupyter Notebook, Expectations can be added, removed, or modified.
     First, rename the new suite of Expectations:
 
-    ![Rename Expectation Suite name](.\assets\images\rename_new_expectation_suite.png)
+    ![Rename Expectation Suite name](./assets/images/rename_new_expectation_suite.png)
 
     Then, I removed the Expectations for max, mean and median values.
 
-    ![Editing Expectations in Notebook](.\assets\images\editing_expectations.png)
+    ![Editing Expectations in Notebook](./assets/images/editing_expectations.png)
 
     Ensure that datetime is in a specific format, e.g. `%Y-%m-%d %H:%M:%S`. I added
     the `expect_column_values_to_match_strftime_format` here and ran the cell.
 
-    ![Expect datetime to be in specific format](.\assets\images\datetime_format.png)
+    ![Expect datetime to be in specific format](./assets/images/datetime_format.png)
 
     After running the final cell, a new Data Doc will be opened, which contains the
     rendered Expectations from the new Expectation Suite.
