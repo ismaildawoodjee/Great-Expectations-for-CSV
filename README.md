@@ -240,7 +240,12 @@ country names, fractional item quantities and a wrong datetime format.
 
 Great Expectations provides ways to profile your data, test it against the expectations
 for data quality (configured according to your needs), and also provides data documentation based
-on these Expectations.
+on these Expectations. Testing is done by writing Expectations, validation is done by
+validating a batch of data against an Expectation Suite, and documentation is provided
+via an easy-to-read HTML file.
 
 You can either write your Expectations from scratch, using the [multitude of options](https://docs.greatexpectations.io/en/latest/reference/glossary_of_expectations.html)
-available, or create [your own Expectations](https://docs.greatexpectations.io/en/latest/guides/how_to_guides/creating_and_editing_expectations/how_to_create_custom_expectations_for_pandas.html)
+available, or create [your own Expectations](https://docs.greatexpectations.io/en/latest/guides/how_to_guides/creating_and_editing_expectations/how_to_create_custom_expectations_for_pandas.html).
+This particular project used CSV flat files located on my local filesystem, but
+GE can also be connected to other types of data that are located elsewhere, for instance,
+on cloud data lakes and warehouses. These will be explored further.
