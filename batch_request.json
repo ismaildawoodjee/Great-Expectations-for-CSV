@@ -1,0 +1,12 @@
+{
+    "datasource_name": "ecommerce",
+    "data_connector_name": "default_inferred_data_connector_name",
+    "data_asset_name": "online_retail_profiling.csv",
+    "limit": 1000,
+    "batch_spec_passthrough": {
+        "reader_method": "read_csv",
+        "reader_options": {
+            "encoding": "ISO-8859-1"
+        }
+    }
+}

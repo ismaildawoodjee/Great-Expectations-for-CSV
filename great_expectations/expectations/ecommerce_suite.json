@@ -14410,6 +14410,14 @@
         ]
       },
       "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_strftime_format",
+      "kwargs": {
+        "column": "InvoiceDate",
+        "strftime_format": "%Y-%m-%d %H:%M:%S"
+      },
+      "meta": {}
     }
   ],
   "meta": {
@@ -14421,7 +14429,7 @@
           "datasource_name": "ecommerce",
           "limit": 1000
         },
-        "citation_date": "2021-07-20T16:46:18.918533Z",
+        "citation_date": "2021-07-21T05:29:12.289015Z",
         "comment": "Created suite added via CLI"
       }
     ],
