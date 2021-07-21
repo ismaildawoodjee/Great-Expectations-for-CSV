@@ -196,6 +196,18 @@
     }
   ],
   "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "online_retail_profiling.csv",
+          "data_connector_name": "default_inferred_data_connector_name",
+          "datasource_name": "ecommerce",
+          "limit": 1000
+        },
+        "citation_date": "2021-07-21T10:50:20.372152Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
     "great_expectations_version": "0.13.23"
   }
 }
